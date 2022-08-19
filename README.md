@@ -1,4 +1,4 @@
-SHRP configuration for Samsung Galaxy A10s (a10s)
+TWRP configuration for Samsung Galaxy A10s (a10s)
 ================================================================
  
 Basic   | Spec Sheet

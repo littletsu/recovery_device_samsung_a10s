@@ -17,24 +17,6 @@
 
 # Device Tree Path
 DEVICE_PATH := device/samsung/a10s
-SHRP_PATH := device/samsung/a10s
-
-# SHRP Props
-SHRP_MAINTAINER := ItzKaguya
-SHRP_DEVICE_CODE := a10s
-SHRP_REC_TYPE := SAR
-SHRP_DEVICE_TYPE := A/B
-SHRP_NOTCH := true
-SHRP_STATUSBAR_RIGHT_PADDING := 20
-SHRP_STATUSBAR_LEFT_PADDING := 20
-SHRP_DARK := true
-SHRP_EDL_MODE := 0
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_AB := true
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -53,8 +35,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
+TARGET_SUPPORTS_64_BIT_APPS := false
 
 # Misc
+TARGET_CPU_SMP := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
@@ -120,18 +104,22 @@ BOARD_VNDK_VERSION := current
 # TWRP specific build flags
 RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1520
 RECOVERY_SDCARD_ON_DATA := true
+TW_USE_SAMSUNG_HAPTICS := true
 # Do not set up legacy properties
 TW_NO_LEGACY_PROPS := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 96
+TW_DEFAULT_BRIGHTNESS := 80
 TW_USE_TOOLBOX := true
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
+TW_MTP_DEVICE := "Galaxy A10s"
 TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true

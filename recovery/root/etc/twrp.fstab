@@ -8,7 +8,7 @@
 /product        ext4 /dev/block/platform/bootdevice/by-name/product 	flags=backup=1;wipeingui;display="Product"
 /system_root 	ext4 /dev/block/platform/bootdevice/by-name/system  	flags=backup=1;wipeingui;display="System"
 /vendor 		ext4 /dev/block/platform/bootdevice/by-name/vendor  	flags=backup=1;wipeingui;display="Vendor"
-/dtbo_image		emmc /dev/block/platform/bootdevice/by-name/dtbo	    flags=backup=0;flashimg;display="DTBO Image"
+/dtbo_image		emmc /dev/block/platform/bootdevice/by-name/dtbo	    flags=backup=0;flashimg;display="DTBO"
 /product_image	emmc /dev/block/platform/bootdevice/by-name/product 	flags=backup=0;flashimg;display="Product Image"
 /system_image	emmc /dev/block/platform/bootdevice/by-name/system  	flags=backup=0;flashimg
 /vendor_image	emmc /dev/block/platform/bootdevice/by-name/vendor  	flags=backup=0;flashimg

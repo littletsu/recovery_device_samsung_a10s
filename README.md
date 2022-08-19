@@ -1,4 +1,4 @@
-SHRP configuration for Samsung Galaxy A10s (a10s)
+OrangeFox Recovery Project configuration for Samsung Galaxy A10s (a10s)
 ================================================================
  
 Basic   | Spec Sheet
